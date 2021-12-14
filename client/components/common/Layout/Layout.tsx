@@ -30,8 +30,8 @@ const navigation = [
     href: '/expenses',
     icon: ReceiptTaxIcon,
     current: false
-  },
-  { name: 'Employees', href: '/employees', icon: UsersIcon, current: false }
+  }
+  // { name: 'Employees', href: '/employees', icon: UsersIcon, current: false }
 ]
 const links = [
   {
@@ -336,7 +336,7 @@ const Layout: React.FC = ({ children }) => {
               </Transition>
             </Menu>
             {/* Sidebar Search */}
-            <div className='px-3 mt-5'>
+            {/* <div className='px-3 mt-5'>
               <label htmlFor='search' className='sr-only'>
                 Search
               </label>
@@ -358,7 +358,7 @@ const Layout: React.FC = ({ children }) => {
                   placeholder='Search'
                 />
               </div>
-            </div>
+            </div> */}
             {/* Navigation */}
             <nav className='px-3 mt-6'>
               <div className='space-y-1'>
@@ -437,7 +437,7 @@ const Layout: React.FC = ({ children }) => {
             </button>
             <div className='flex justify-between flex-1 px-4 sm:px-6 lg:px-8'>
               <div className='flex flex-1'>
-                <form className='flex w-full md:ml-0' action='#' method='GET'>
+                {/* <form className='flex w-full md:ml-0' action='#' method='GET'>
                   <label htmlFor='search-field' className='sr-only'>
                     Search
                   </label>
@@ -453,7 +453,16 @@ const Layout: React.FC = ({ children }) => {
                       type='search'
                     />
                   </div>
-                </form>
+                </form> */}
+                <Link href='/'>
+                  <a className='flex items-center flex-shrink-0 text-2xl font-bold tracking-wide text-gray-700 underline decoration-fuchsia-300 decoration-2 underline-offset-2'>
+                    <SparklesIcon
+                      className='w-6 h-6 mr-3 text-fuchsia-400'
+                      aria-hidden={true}
+                    />
+                    FullStackExpense
+                  </a>
+                </Link>
               </div>
               <div className='flex items-center'>
                 {/* Profile dropdown */}
