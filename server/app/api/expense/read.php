@@ -22,12 +22,12 @@ if ($num > 0) {
         extract($row);
 
         $expense_item = array(
-      'id' => $expense_id,
-      'description' => $description,
-      'amount' => $amount,
-      'employee_id' => $employee_id,
-      'employee_name' => $employee_name
-    );
+            'id' => $expense_id,
+            'description' => $description,
+            'amount' => $amount,
+            'employee_id' => $employee_id,
+            'employee_name' => $employee_name
+        );
 
         array_push($expenses_arr, $expense_item);
     }
