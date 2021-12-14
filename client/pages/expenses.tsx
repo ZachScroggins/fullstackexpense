@@ -363,9 +363,13 @@ const Expenses: NextPage = () => {
                               className='hidden whitespace-normal md:table-cell'
                             >
                               <div className='flex items-center pl-6 lg:pl-8'>
-                                <a href='#' className=' hover:text-gray-600'>
+                                <button
+                                  type='button'
+                                  onClick={() => openUpdate(row.original)}
+                                  className=' hover:text-gray-600'
+                                >
                                   <span>{cell.render('Cell')}</span>
-                                </a>
+                                </button>
                               </div>
                             </td>
                           )
