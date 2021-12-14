@@ -23,6 +23,6 @@ export default {
   twitter: {
     handle: '@scroggins_zach',
     site: '@scroggins_zach',
-    cardType: 'summary'
+    cardType: 'summary_large_image'
   }
 }
